@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE language SYSTEM "language.dtd" [
+<!ENTITY picsig "\bPIC(TURE)?(\s+IS)?\s+">
+<!ENTITY verbs "\b(((END-)?(ACCEPT|ADD|CALL|COMPUTE|DELETE|DISPLAY|DIVIDE|EVALUATE|IF|MULTIPLY|PERFORM|READ|RECEIVE|RETURN|REWRITE|SEARCH|START|STRING|SUBTRACT|UNSTRING|WRITE))|ALTER|ASSIGN|CHAIN|CLOSE|CONTINUE|CONTROL|COPY|COUNT|ELSE|ENABLE|ERASE|EXIT|GENERATE|GO|GOBACK|IGNORE|INITIALIZE|INITIATE|INSPECT|INVOKE|MERGE|MOVE|OPEN|RELEASE|REPLACE|RESERVE|RESET|REWIND|ROLLBACK|RUN|SELECT|SEND|SET|SORT|STOP|SUM|SUPPRESS|TERMINATE|THEN|TRANSFORM|UNLOCK|UPDATE|USE|WAIT|WHEN)\b(?!-)">
+<!ENTITY usages "\b(BINARY|BINARY-C-LONG|BINARY-CHAR|BINARY-DOUBLE|BINARY-LONG|BINARY-SHORT|COMP|COMP-1|COMP-2|COMP-3|COMP-4|COMP-5|COMP-X|COMPUTATIONAL|COMPUTATIONAL-1|COMPUTATIONAL-2|COMPUTATIONAL-3|COMPUTATIONAL-4|COMPUTATIONAL-5|COMPUTATIONAL-X|FLOAT-BINARY-16|FLOAT-BINARY-34|FLOAT-BINARY-7|FLOAT-DECIMAL-16|FLOAT-DECIMAL-34|FLOAT-EXTENDED|FLOAT-LONG|FLOAT-SHORT|FUNCTION-POINTER|INDEX|NATIONAL|PACKED-DECIMAL|POINTER|PROCEDURE-POINTER|PROGRAM-POINTER|SIGNED|SIGNED-INT|SIGNED-LONG|SIGNED-SHORT|UNSIGNED|UNSIGNED-INT|UNSIGNED-LONG|UNSIGNED-SHORT)\b(?!-)">
+<!ENTITY keywords "\b(CD|CLASS-ID|COMMUNICATION|CONFIGURATION|DATA|DECLARATIVES|DIVISION|ENVIRONMENT|FD|FILE|FILE-CONTROL|FUNCTION|FUNCTION-ID|I-O|I-O-CONTROL|ID|IDENTIFICATION|INPUT|INPUT-OUTPUT|INTERFACE-ID|LINKAGE|LOCAL-STORAGE|METHOD-ID|OUTPUT|PROCEDURE|PROGRAM|PROGRAM-ID|RD|REPORT|REPOSITORY|SD|SECTION|SPECIAL-NAMES|WORKING-STORAGE)\b(?!-)">
+<!ENTITY div "\b(ID|IDENTIFICATION|ENVIRONMENT|DATA|PROCEDURE)\b(?!-)">
+<!ENTITY division "\b&div;\s+DIVISION\b(?!-)">
+<!ENTITY sec "\b(COMMUNICATION|CONFIGURATION|INPUT-OUTPUT|FILE|WORKING-STORAGE|LOCAL-STORAGE|LINKAGE|REPORT|SCREEN)\b(?!-)">
+<!ENTITY section "\b&sec;\s+SECTION\b(?!-)">
+<!ENTITY logical "\b(AND|EQUAL|EQUALS|GREATER|LESS|OR|THAN)\b(?!-)">
+<!ENTITY constants "\b(HIGH-VALUEHIGH-VALUES|LOW-VALUE|LOW-VALUES|NULL|NULLS|QUOTE|QUOTES|SPACE|SPACES|ZERO|ZEROES|ZEROS)\b(?!-)">
+<!ENTITY reserved "\b(ACCEPT|ACCESS|ACTIVE-CLASS|ADD|ADDRESS|ADVANCING|AFTER|ALIGNED|ALL|ALLOCATE|ALPHABET|ALPHABETIC|ALPHABETIC-LOWER|ALPHABETIC-UPPER|ALPHANUMERIC|ALPHANUMERIC-EDITED|ALSO|ALTER|ALTERNATE|AND|ANY|ANYCASE|ARE|AREA|AREAS|ARGUMENT-NUMBER|ARGUMENT-VALUE|ARITHMETIC|AS|ASCENDING|ASSIGN|AT|ATTRIBUTE|AUTO|AUTO-SKIP|AUTOMATIC|AUTOTERMINATE|B-AND|B-NOT|B-OR|B-XOR|BACKGROUND-COLOR|BASED|BEEP|BEFORE|BELL|BINARY|BINARY-C-LONG|BINARY-CHAR|BINARY-DOUBLE|BINARY-LONG|BINARY-SHORT|BIT|BLANK|BLINK|BLOCK|BOOLEAN|BOTTOM|BY|BYTE-LENGTH|CALL|CANCEL|CD|CENTER|CF|CH|CHAIN|CHAINING|CHARACTER|CHARACTERS|CLASS|CLASS-ID|CLASSIFICATION|CLOSE|CODE|CODE-SET|COL|COLLATING|COLS|COLUMN|COLUMNS|COMMA|COMMAND-LINE|COMMIT|COMMON|COMMUNICATION|COMP|COMP-1|COMP-2|COMP-3|COMP-4|COMP-5|COMP-X|COMPUTATIONAL|COMPUTATIONAL-1|COMPUTATIONAL-2|COMPUTATIONAL-3|COMPUTATIONAL-4|COMPUTATIONAL-5|COMPUTATIONAL-X|COMPUTE|CONDITION|CONFIGURATION|CONSTANT|CONTAINS|CONTENT|CONTINUE|CONTROL|CONTROLS|CONVERTING|COPY|CORR|CORRESPONDING|COUNT|CRT|CURRENCY|CURSOR|CYCLE|DATA|DATA-POINTER|DATE|DAY|DAY-OF-WEEK|DE|DEBUGGING|DECIMAL-POINT|DECLARATIVES|DEFAULT|DELETE|DELIMITED|DELIMITER|DEPENDING|DESCENDING|DESTINATION|DETAIL|DISABLE|DISK|DISPLAY|DIVIDE|DIVISION|DOWN|DUPLICATES|DYNAMIC|EBCDIC|EC|EGI|ELSE|EMI|ENABLE|END|END-ACCEPT|END-ADD|END-CALL|END-COMPUTE|END-DELETE|END-DISPLAY|END-DIVIDE|END-EVALUATE|END-IF|END-MULTIPLY|END-OF-PAGE|END-PERFORM|END-READ|END-RECEIVE|END-RETURN|END-REWRITE|END-SEARCH|END-START|END-STRING|END-SUBTRACT|END-UNSTRING|END-WRITE|ENTRY|ENTRY-CONVENTION|ENVIRONMENT|ENVIRONMENT-NAME|ENVIRONMENT-VALUE|EO|EOL|EOP|EOS|EQUAL|EQUALS|ERASE|ERROR|ESCAPE|ESI|EVALUATE|EXCEPTION|EXCEPTION-OBJECT|EXCLUSIVE|EXIT|EXPANDS|EXTEND|EXTERNAL|FACTORY|FALSE|FD|FILE|FILE-CONTROL|FILE-ID|FILLER|FINAL|FIRST|FLOAT-BINARY-16|FLOAT-BINARY-34|FLOAT-BINARY-7|FLOAT-DECIMAL-16|FLOAT-DECIMAL-34|FLOAT-EXTENDED|FLOAT-LONG|FLOAT-SHORT|FOOTING|FOR|FOREGROUND-COLOR|FOREVER|FORMAT|FREE|FROM|FULL|FUNCTION|FUNCTION-ID|FUNCTION-POINTER|GENERATE|GET|GIVING|GLOBAL|GO|GOBACK|GREATER|GROUP|GROUP-USAGE|HEADING|HIGH-VALUE|HIGH-VALUES|HIGHLIGHT|I-O|I-O-CONTROL|ID|IDENTIFICATION|IF|IGNORE|IGNORING|IMPLEMENTS|IN|INDEX|INDEXED|INDICATE|INFINITY|INHERITS|INITIAL|INITIALIZE|INITIALIZED|INITIATE|INPUT|INPUT-OUTPUT|INSPECT|INTERFACE|INTERFACE-ID|INTO|INTRINSIC|INVALID|INVOKE|IS|JUST|JUSTIFIED|KEY|LABEL|LAST|LC_ALL|LC_COLLATE|LC_CTYPE|LC_MESSAGES|LC_MONETARY|LC_NUMERIC|LC_TIME|LEADING|LEFT|LENGTH|LESS|LIMIT|LIMITS|LINAGE|LINAGE-COUNTER|LINE|LINE-COUNTER|LINES|LINKAGE|LOCAL-STORAGE|LOCALE|LOCK|LOW-VALUE|LOW-VALUES|LOWLIGHT|MANUAL|MEMORY|MERGE|MESSAGE|METHOD|METHOD-ID|MINUS|MODE|MOVE|MULTIPLE|MULTIPLY|NATIONAL|NATIONAL-EDITED|NATIVE|NEGATIVE|NESTED|NEXT|NO|NONE|NORMAL|NOT|NULL|NULLS|NUMBER|NUMBERS|NUMERIC|NUMERIC-EDITED|OBJECT|OBJECT-COMPUTER|OBJECT-REFERENCE|OCCURS|OF|OFF|OMITTED|ON|ONLY|OPEN|OPTIONAL|OPTIONS|OR|ORDER|ORGANIZATION|OTHER|OUTPUT|OVERFLOW|OVERLINE|OVERRIDE|PACKED-DECIMAL|PADDING|PAGE|PAGE-COUNTER|PARAGRAPH|PERFORM|PF|PH|PIC|PICTURE|PLUS|POINTER|POSITION|POSITIVE|PRESENT|PREVIOUS|PRINTER|PRINTING|PROCEDURE|PROCEDURE-POINTER|PROCEDURES|PROCEED|PROGRAM|PROGRAM-ID|PROGRAM-POINTER|PROMPT|PROPERTY|PROTOTYPE|PURGE|QUEUE|QUOTE|QUOTES|RAISE|RAISING|RANDOM|RD|READ|RECEIVE|RECORD|RECORDING|RECORDS|RECURSIVE|REDEFINES|REEL|REFERENCE|RELATION|RELATIVE|RELEASE|REMAINDER|REMOVAL|RENAMES|REPLACE|REPLACING|REPORT|REPORTING|REPORTS|REPOSITORY|REQUIRED|RESERVE|RESET|RESUME|RETRY|RETURN|RETURNING|REVERSE-VIDEO|REWIND|REWRITE|RF|RH|RIGHT|ROLLBACK|ROUNDED|RUN|SAME|SCREEN|SCROLL|SD|SEARCH|SECONDS|SECTION|SECURE|SEGMENT|SEGMENT-LIMIT|SELECT|SELF|SEND|SENTENCE|SEPARATE|SEQUENCE|SEQUENTIAL|SET|SHARING|SIGN|SIGNED|SIGNED-INT|SIGNED-LONG|SIGNED-SHORT|SIZE|SORT|SORT-MERGE|SOURCE|SOURCE-COMPUTER|SOURCES|SPACE|SPACES|SPECIAL-NAMES|STANDARD|STANDARD-1|STANDARD-2|START|STATEMENT|STATUS|STEP|STOP|STRING|STRONG|SUB-QUEUE-1|SUB-QUEUE-2|SUB-QUEUE-3|SUBTRACT|SUM|SUPER|SUPPRESS|SYMBOL|SYMBOLIC|SYNC|SYNCHRONIZED|SYSTEM-DEFAULT|TABLE|TALLYING|TAPE|TERMINAL|TERMINATE|TEST|TEXT|THAN|THEN|THROUGH|THRU|TIME|TIMES|TO|TOP|TRAILING|TRANSFORM|TRUE|TYPE|TYPEDEF|UCS-4|UNDERLINE|UNIT|UNIVERSAL|UNLOCK|UNSIGNED|UNSIGNED-INT|UNSIGNED-LONG|UNSIGNED-SHORT|UNSTRING|UNTIL|UP|UPDATE|UPON|USAGE|USE|USER-DEFAULT|USING|UTF-16|UTF-8|VAL-STATUS|VALID|VALIDATE|VALIDATE-STATUS|VALUE|VALUES|VARYING|WAIT|WHEN|WITH|WORDS|WORKING-STORAGE|WRITE|YYYYDDD|YYYYMMDD|ZERO|ZEROES|ZEROS)\b(?!-)">
+<!ENTITY funcsig "\bFUNCTION\s+">
+<!ENTITY functions "\b(ABS|ACOS|ANNUITY|ASIN|ATAN|BYTE-LENGTH|CHAR|CONCATENATE|COS|CURRENT-DATE|DATE-OF-INTEGER|DATE-TO-YYYYMMDD|DAY-OF-INTEGER|DAY-TO-YYYYDDD|E|EXCEPTION-FILE|EXCEPTION-LOCATION|EXCEPTION-STATEMENT|EXCEPTION-STATUS|EXP|EXP10|FACTORIAL|FRACTION-PART|INTEGER|INTEGER-OF-DATE|INTEGER-OF-DAY|INTEGER-PART|LENGTH|LOCALE-DATE|LOCALE-TIME|LOG|LOG10|LOWER-CASE|MAX|MEAN|MEDIAN|MIDRANGE|MIN|MOD|NUMVAL|NUMVAL-C|ORD|ORD-MAX|ORD-MIN|PI|PRESENT-VALUE|RANDOM|RANGE|REM|REVERSE|SECONDS-FROM-FORMATTED-TIME|SECONDS-PAST-MIDNIGHT|SIGN|SIN|SQRT|STANDARD-DEVIATION|STORED-CHAR-LENGTH|SUBSTITUTE|SUBSTITUTE-CASE|SUM|TAN|TEST-DATE-YYYYMMDD|TEST-DAY-YYYYDDD|TRIM|UPPER-CASE|VARIANCE|WHEN-COMPILED|YEAR-TO-YYYY)\b(?!-)">
+]>
+<language name="COBOL" section="Sources" version="1.02" kateversion="5.0" extensions="*.cob;*.cbl">
+  <highlighting>
+    <contexts>
+      <context name="Normal" attribute="Normal Text" lineEndContext="#stay">
+        <DetectChar attribute="Comment" context="comment" char="*" column="6"/>
+        <DetectChar attribute="Comment" context="comment" char="*" column="0"/>
+        <DetectChar attribute="Comment" context="comment" char="/" column="6"/>
+        <DetectChar attribute="Comment" context="comment" char="/" column="0"/>
+        <Detect2Chars attribute="Comment" context="comment" char="*" char2=">"/>
+        <RegExpr attribute="Keywords" context="#stay" String="(^|\s+)((PROGRAM|FUNCTION|CLASS|INTERFACE|METHOD)-ID|FACTORY|OBJECT)\b(?!-)" insensitive="true" beginRegion="ID"/>
+        <RegExpr attribute="Keywords" context="#stay" String="(^|\s+)END (PROGRAM|FUNCTION|CLASS|INTERFACE|METHOD|FACTORY|OBJECT)\b(?!-)" insensitive="true" endRegion="ID"/>
+        <RegExpr attribute="Other reserved words" context="picture" String="&picsig;" insensitive="true"/>
+        <RegExpr attribute="Normal" context="#stay" String="-&picsig;" insensitive="true"/>
+        <RegExpr attribute="Other reserved words" context="function" String="&funcsig;" insensitive="true"/>
+        <RegExpr attribute="Normal" context="#stay" String="-&funcsig;" insensitive="true"/>
+        <RegExpr attribute="Verb" context="#stay" String="&verbs;" insensitive="true"/>
+        <RegExpr attribute="Normal" context="#stay" String="-&verbs;" insensitive="true"/>
+        <RegExpr attribute="Usage" context="#stay" String="&usages;" insensitive="true"/>
+        <RegExpr attribute="Normal" context="#stay" String="-&usages;" insensitive="true"/>
+        <RegExpr attribute="Division" context="#stay" String="&division;" insensitive="true"/>
+        <RegExpr attribute="Normal" context="#stay" String="-&division;" insensitive="true"/>
+        <RegExpr attribute="Section" context="#stay" String="&section;" insensitive="true"/>
+        <RegExpr attribute="Normal" context="#stay" String="-&section;" insensitive="true"/>
+        <RegExpr attribute="Keywords" context="#stay" String="&keywords;" insensitive="true"/>
+        <RegExpr attribute="Normal" context="#stay" String="-&keywords;" insensitive="true"/>
+        <RegExpr attribute="Constant" context="#stay" String="&constants;" insensitive="true"/>
+        <RegExpr attribute="Normal" context="#stay" String="-&constants;" insensitive="true"/>
+        <RegExpr attribute="Logical" context="#stay" String="&logical;" insensitive="true"/>
+        <RegExpr attribute="Normal" context="#stay" String="-&logical;" insensitive="true"/>
+        <RegExpr attribute="Other reserved words" context="#stay" String="&reserved;" insensitive="true"/>
+        <RegExpr attribute="Normal" context="#stay" String="-&reserved;" insensitive="true"/>
+        <RegExpr attribute="Float" String="(^|\s)-?\d*\.\d+($|\s)" insensitive="true" context="#stay"/>
+        <RegExpr attribute="Hex" String="H(&quot;[0-9A-F]+&quot;|'[0-9A-F]+')" insensitive="true" context="#stay"/>
+        <RegExpr attribute="Char" String="X(&quot;[0-9A-F]+&quot;|'[0-9A-F]+')" insensitive="true" context="#stay"/>
+        <RegExpr attribute="Decimal" String="(^|\s)-?\d+($|\s)" insensitive="true" context="#stay"/>
+        <DetectChar attribute="String" context="string-d" char="&quot;"/>
+        <DetectChar attribute="String" context="string-s" char="'"/>
+      </context>
+      <context name="comment" attribute="Comment" lineEndContext="#pop">
+        <DetectSpaces />
+        <DetectIdentifier />
+      </context>
+      <context name="string-d" attribute="String" lineEndContext="#pop">
+        <DetectChar attribute="String" context="#pop" char="&quot;"/>
+      </context>
+      <context name="string-s" attribute="String" lineEndContext="#pop">
+        <DetectChar attribute="String" context="#pop" char="'"/>
+      </context>
+      <context name="picture" attribute="Error" lineEndContext="#pop">
+        <RegExpr attribute="Picture" String="(^|\s)[\-$*,+S]*(Z(\(\d+\))?|,)*([9AXPN](\(\d+\))?|[,/B])*[.V]?([9AXPN](\(\d+\))?|[,/B])+(CR|DB)?(?=\.?(\s|$))" insensitive="true" context="#pop"/>
+        <DetectSpaces attribute="Normal Text" context="#pop"/>
+        <DetectChar attribute="Normal Text" context="#pop" char="."/>
+      </context>
+      <context name="function" attribute="Error" lineEndContext="#pop">
+        <RegExpr attribute="Function" String="(^|\s)&functions;" insensitive="true" context="#pop"/>
+        <RegExpr attribute="Other reserved words" String="(^|\s)ALL\b(?!-)" insensitive="true" context="#pop"/>
+        <DetectSpaces attribute="Normal Text" context="#pop"/>
+        <DetectChar attribute="Normal Text" context="#pop" char="."/>
+      </context>
+    </contexts>
+    <itemDatas>
+      <itemData name="Normal Text" defStyleNum="dsNormal" spellChecking="false"/>
+      <itemData name="Decimal" defStyleNum="dsDecVal" spellChecking="false"/>
+      <itemData name="Float" defStyleNum="dsFloat" spellChecking="false"/>
+      <itemData name="Hex" defStyleNum="dsBaseN" spellChecking="false"/>
+      <itemData name="Constant" defStyleNum="dsKeyword" spellChecking="false" color="#b08000" selColor="#ffdd00" bold="false" italic="true"/>
+      <itemData name="Logical" defStyleNum="dsKeyword" spellChecking="false" color="#cc0099" selColor="#ffccee" italic="true"/>
+      <itemData name="String" defStyleNum="dsString"/>
+      <itemData name="Char" defStyleNum="dsChar" spellChecking="false"/>
+      <itemData name="Division" defStyleNum="dsRegionMarker" spellChecking="false" color="#00eeff" selColor="#000099" backgroundColor="#000099" selBackgroundColor="#ffffff" bold="true" italic="false"/>
+      <itemData name="Section" defStyleNum="dsRegionMarker" spellChecking="false" bold="true"/>
+      <itemData name="Keywords" defStyleNum="dsKeyword" spellChecking="false"/>
+      <itemData name="Verb" defStyleNum="dsKeyword" spellChecking="false" color="#0066ff" selColor="#ccccff"/>
+      <itemData name="Picture" defStyleNum="dsDataType" spellChecking="false"/>
+      <itemData name="Usage" defStyleNum="dsDataType" spellChecking="false"/>
+      <itemData name="Other reserved words" defStyleNum="dsOthers" spellChecking="false"/>
+      <itemData name="Function" defStyleNum="dsFunction" spellChecking="false"/>
+      <itemData name="Comment" defStyleNum="dsComment"/>
+      <itemData name="Error" defStyleNum="dsError" spellChecking="false"/>
+    </itemDatas>
+  </highlighting>
+  <general>
+    <comments>
+      <comment name="singleLine" start="*>" />
+    </comments>
+    <keywords casesensitive="false"/>
+  </general>
+</language>
